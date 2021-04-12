@@ -24,7 +24,7 @@
 		84BCAD052620D1A50074062C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84BCAD072620D1A60074062C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84BCAD0A2620D1A60074062C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84BCAD0C2620D1A60074062C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BCAD0C2620D1A60074062C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = LoggingScreen/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		84BCAD1326239B7D0074062C /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,16 +58,56 @@
 		84BCACFD2620D1A50074062C /* LoggingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				84BCACFE2620D1A50074062C /* AppDelegate.swift */,
-				84BCAD002620D1A50074062C /* SceneDelegate.swift */,
-				84BCAD022620D1A50074062C /* ViewController.swift */,
-				84BCAD042620D1A50074062C /* Main.storyboard */,
-				84BCAD072620D1A60074062C /* Assets.xcassets */,
-				84BCAD092620D1A60074062C /* LaunchScreen.storyboard */,
-				84BCAD0C2620D1A60074062C /* Info.plist */,
-				84BCAD1326239B7D0074062C /* RedViewController.swift */,
+				84BCAD1A26248AF20074062C /* Resources */,
+				84BCAD1926248ADB0074062C /* Supporting files */,
+				84BCAD18262489F50074062C /* Controller */,
+				84BCAD17262489EE0074062C /* View */,
+				84BCAD16262489DE0074062C /* Model */,
 			);
 			path = LoggingScreen;
+			sourceTree = "<group>";
+		};
+		84BCAD16262489DE0074062C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84BCAD17262489EE0074062C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84BCAD002620D1A50074062C /* SceneDelegate.swift */,
+				84BCAD092620D1A60074062C /* LaunchScreen.storyboard */,
+				84BCAD042620D1A50074062C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84BCAD18262489F50074062C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84BCAD022620D1A50074062C /* ViewController.swift */,
+				84BCAD1326239B7D0074062C /* RedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84BCAD1926248ADB0074062C /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				84BCACFE2620D1A50074062C /* AppDelegate.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		84BCAD1A26248AF20074062C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84BCAD0C2620D1A60074062C /* Info.plist */,
+				84BCAD072620D1A60074062C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832H9LUWZZ;
-				INFOPLIST_FILE = LoggingScreen/Info.plist;
+				INFOPLIST_FILE = LoggingScreen/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832H9LUWZZ;
-				INFOPLIST_FILE = LoggingScreen/Info.plist;
+				INFOPLIST_FILE = LoggingScreen/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
