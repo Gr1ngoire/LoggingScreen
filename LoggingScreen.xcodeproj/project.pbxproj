@@ -13,6 +13,7 @@
 		84BCAD062620D1A50074062C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BCAD042620D1A50074062C /* Main.storyboard */; };
 		84BCAD082620D1A60074062C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BCAD072620D1A60074062C /* Assets.xcassets */; };
 		84BCAD0B2620D1A60074062C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BCAD092620D1A60074062C /* LaunchScreen.storyboard */; };
+		84BCAD1426239B7D0074062C /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BCAD1326239B7D0074062C /* RedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		84BCAD072620D1A60074062C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84BCAD0A2620D1A60074062C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84BCAD0C2620D1A60074062C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BCAD1326239B7D0074062C /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				84BCAD072620D1A60074062C /* Assets.xcassets */,
 				84BCAD092620D1A60074062C /* LaunchScreen.storyboard */,
 				84BCAD0C2620D1A60074062C /* Info.plist */,
+				84BCAD1326239B7D0074062C /* RedViewController.swift */,
 			);
 			path = LoggingScreen;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BCAD1426239B7D0074062C /* RedViewController.swift in Sources */,
 				84BCAD032620D1A50074062C /* ViewController.swift in Sources */,
 				84BCACFF2620D1A50074062C /* AppDelegate.swift in Sources */,
 				84BCAD012620D1A50074062C /* SceneDelegate.swift in Sources */,

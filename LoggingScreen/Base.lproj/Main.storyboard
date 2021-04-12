@@ -27,6 +27,7 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PwI-8N-rd5"/>
+                                    <segue destination="TVS-A0-q3Z" kind="presentation" id="h5S-sW-Yag"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Wm6-Qg-HPY">
@@ -89,16 +90,45 @@
             </objects>
             <point key="canvasLocation" x="958" y="-564"/>
         </scene>
-        <!--View Controller-->
+        <!--Red View Controller-->
         <scene sceneID="emy-Ej-GeH">
             <objects>
-                <viewController id="TVS-A0-q3Z" sceneMemberID="viewController">
+                <viewController id="TVS-A0-q3Z" customClass="RedViewController" customModule="LoggingScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qub-2s-bPU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N13-6a-V86">
+                                <rect key="frame" x="92" y="457" width="230" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="Main Screen">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToMainScreen:" destination="TVS-A0-q3Z" eventType="touchUpInside" id="voG-nX-oze"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Suk-P2-TPw">
+                                <rect key="frame" x="125" y="164" width="164" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="F9q-nR-5lc"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="F9q-nR-5lc" firstAttribute="bottom" secondItem="N13-6a-V86" secondAttribute="bottom" constant="199" id="Cic-ia-0fW"/>
+                            <constraint firstItem="Suk-P2-TPw" firstAttribute="top" secondItem="F9q-nR-5lc" secondAttribute="top" constant="164" id="aZd-oE-eQA"/>
+                            <constraint firstItem="N13-6a-V86" firstAttribute="leading" secondItem="F9q-nR-5lc" secondAttribute="leading" constant="92" id="fKn-91-h4V"/>
+                            <constraint firstItem="F9q-nR-5lc" firstAttribute="trailing" secondItem="Suk-P2-TPw" secondAttribute="trailing" constant="125" id="ivP-xx-Fiz"/>
+                            <constraint firstItem="F9q-nR-5lc" firstAttribute="trailing" secondItem="N13-6a-V86" secondAttribute="trailing" constant="92" id="np9-uB-ebg"/>
+                            <constraint firstItem="Suk-P2-TPw" firstAttribute="leading" secondItem="F9q-nR-5lc" secondAttribute="leading" constant="125" id="tze-dT-xWh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="Suk-P2-TPw" id="9YG-fJ-Sxh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUy-Lz-2dZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,6 +138,9 @@
     <resources>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
